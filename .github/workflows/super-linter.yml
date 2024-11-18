@@ -36,9 +36,8 @@ jobs:
       - name: Format code
         run: standard --fix
 
-      - name: Lint Code Base
-        uses: super-linter/super-linter@v7.1.0
+      - name: Super-linter
+        uses: super-linter/super-linter@v7.2.0 # x-release-please-version
         env:
-          VALIDATE_ALL_CODEBASE: false
-          DEFAULT_BRANCH: "main"
+          # To report GitHub Actions status checks
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
