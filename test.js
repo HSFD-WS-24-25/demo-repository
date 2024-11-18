@@ -1,8 +1,5 @@
 function Hello() {
-            console.log('Hello, World!')
-
-
-
+            console.log('Hello!')
 
 
             
@@ -10,3 +7,5 @@ function Hello() {
 
 
 Hello();;
+
+Hello()
