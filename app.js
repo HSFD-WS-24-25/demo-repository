@@ -1,13 +1,8 @@
-function Hello () {
-                        console.log('Hello')
-                
-                
-                
-                }
-        
-        
-        
-        
-        
-        
-        Hello()
+function Hello() {
+                        console.log("Hello")
+}
+
+
+
+
+Hello()

@@ -2,9 +2,9 @@ name: Code formatter with Prettier
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   run-lint:
@@ -16,6 +16,6 @@ jobs:
       # Formatter: Prettier for css, HTML and yml files
       - name: Install prettier
         run: npm install prettier --global
-      
+
       - name: Format code with Prettier
         run: prettier . --write
