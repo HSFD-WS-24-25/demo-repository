@@ -22,8 +22,8 @@ jobs:
           # Full git history is needed to get a proper list of changed files within `super-linter`
           fetch-depth: 0
 
-      # - name: Install prettier
-      #   run: npm install prettier --global
+      - name: Install prettier
+        run: npm install prettier
       
       - name: Format code
         run: prettier . --write
