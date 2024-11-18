@@ -23,7 +23,7 @@ jobs:
           fetch-depth: 0
 
       - name: Install prettier
-        run: npm install prettier
+        run: npm install prettier --global
       
       - name: Format code
         run: prettier . --write
