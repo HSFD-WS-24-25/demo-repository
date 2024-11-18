@@ -22,11 +22,11 @@ jobs:
           # Full git history is needed to get a proper list of changed files within `super-linter`
           fetch-depth: 0
 
-      - name: Install standard js
-        run: npm install standard --global
+      # - name: Install standard js
+      #   run: npm install standard --global
       
-      - name: Format code
-        run: standard --fix
+      # - name: Format code
+      #   run: standard --fix
 
       - name: Lint Code Base
         uses: super-linter/super-linter@v7.1.0
