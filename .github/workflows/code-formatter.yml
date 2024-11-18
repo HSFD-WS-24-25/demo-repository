@@ -27,3 +27,7 @@ jobs:
       
       - name: Format code with standard
         run: standard --fix
+      
+      - name: Super-Linter
+        uses: super-linter/super-linter@v7.1.0
+          
