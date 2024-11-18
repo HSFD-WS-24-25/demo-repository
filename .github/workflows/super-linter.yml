@@ -11,6 +11,7 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+
 jobs:
   run-lint:
     runs-on: ubuntu-latest
@@ -21,8 +22,14 @@ jobs:
           # Full git history is needed to get a proper list of changed files within `super-linter`
           fetch-depth: 0
 
+      - name: Install standard js
+        run: npm install standard --global
+      
+      - name: Format code
+        run:  standard --fix
+
       - name: Lint Code Base
-        uses: github/super-linter@v4
+        uses: super-linter/super-linter@v7.1.0
         env:
           VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: "main"
