@@ -22,11 +22,19 @@ jobs:
           # Full git history is needed to get a proper list of changed files within `super-linter`
           fetch-depth: 0
 
+      # Formatter: Prettier for css, HTML and yml files
       - name: Install prettier
         run: npm install prettier --global
       
-      - name: Format code
+      - name: Format code with Prettier
         run: prettier . --write
+
+      # Linter: Standard js
+      - name: Install standard
+        run: npm install standard --global
+      
+      - name: Format code
+        run: standard --fix
 
       - name: Lint Code Base
         uses: super-linter/super-linter@v7.1.0
