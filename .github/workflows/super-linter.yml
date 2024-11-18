@@ -24,3 +24,9 @@ jobs:
           FIX_YAML_PRETTIER: true
           DEFAULT_BRANCH: "main"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Apply formatting changes
+          branch: ${{ github.event.pull_request.head.ref || github.head_ref || github.ref }}
