@@ -19,3 +19,11 @@ jobs:
 
       - name: Format code with Prettier
         run: prettier . --write
+
+
+      # Linter: Standard js
+      - name: Install Standard js
+        run: npm install standard --global
+      
+      - name: Format code with standard
+        run: standard --fix
