@@ -40,5 +40,6 @@ jobs:
           VALIDATE_CHECKOV: false
           FIX_JAVASCRIPT_PRETTIER: true
           FIX_JAVASCRIPT_STANDARD: true
+          FIX_YAML_PRETTIER: true
           DEFAULT_BRANCH: "main"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
