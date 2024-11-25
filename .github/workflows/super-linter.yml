@@ -29,7 +29,7 @@ jobs:
           # Set your fix mode variables to true
           FIX_SHELL_SHFMT: true
           # FIX_YAML_PRETTIER: true
-          VALIDATE_YAML: false
+          VALIDATE_YAML_PRETTIER: false
           FIX_JAVASCRIPT_PRETTIER: true
           FIX_JAVASCRIPT_STANDARD: true
           VALIDATE_NATURAL_LANGUAGE: false
