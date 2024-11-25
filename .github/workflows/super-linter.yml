@@ -7,6 +7,9 @@ on:
 jobs:
   run-lint:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write      # Allows modifying repository contents
+    
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
