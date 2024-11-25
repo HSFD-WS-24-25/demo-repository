@@ -25,11 +25,12 @@ jobs:
       - name: Super-Linter
         uses: super-linter/super-linter@v7.2.0 # x-release-please-version
         env:
-          GITHUB_TOKEN: ${{ secrets.WORKFLOW_PERMISSION }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # Set your fix mode variables to true
           FIX_SHELL_SHFMT: true
           # FIX_YAML_PRETTIER: true
           VALIDATE_YAML_PRETTIER: false
+          FIX_JSON_PRETTIER: true
           FIX_JAVASCRIPT_PRETTIER: true
           FIX_JAVASCRIPT_STANDARD: true
           VALIDATE_NATURAL_LANGUAGE: false
