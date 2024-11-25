@@ -4,11 +4,11 @@ on:
   push:
     branches: ["main"]
 
+permissions: write-all
+
 jobs:
   run-lint:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write      # Allows modifying repository contents
+    runs-on: ubuntu-latest 
     
     steps:
       - name: Checkout code
