@@ -35,6 +35,7 @@ jobs:
           commit_message: "chore: fix linting issues"
           commit_user_name: super-linter
           commit_user_email: super-linter@super-linter.dev
+          file_pattern: "! .github/workflows/*"
 
       - name: Debug
         run: cat ./test.js
