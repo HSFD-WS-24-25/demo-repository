@@ -9,7 +9,9 @@ name: Lint Code Base
 on:
   push:
     branches: [ "main" ]
-
+  pull_request: 
+    branches: [ "main" ]
+    
 permissions:
   contents: write   # Allows pushing commits, creating branches, and modifying files
   pull-requests: write # Allows creating and merging pull requests
