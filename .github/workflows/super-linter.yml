@@ -26,9 +26,9 @@ jobs:
         uses: super-linter/super-linter@v7.2.0 # x-release-please-version
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          IGNORE_GITIGNORED_FILES: false
+          IGNORE_GITIGNORED_FILES: true
           FIX_SHELL_SHFMT: true
-          VALIDATE_YAML_PRETTIER: false
+          FIX_YAML_PRETTIER: true
           FIX_JSON_PRETTIER: true
           FIX_JAVASCRIPT_PRETTIER: true
           FIX_JAVASCRIPT_STANDARD: true
