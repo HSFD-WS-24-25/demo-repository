@@ -3,7 +3,7 @@ name: Code formatter with Prettier
 on:
   push:
     branches: ["main"]
-
+    
 permissions: write-all
 
 jobs:
