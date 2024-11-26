@@ -31,7 +31,7 @@ jobs:
           FIX_YAML_PRETTIER: true
           FIX_JSON_PRETTIER: true
           FIX_JAVASCRIPT_PRETTIER: true
-          FIX_JAVASCRIPT_STANDARD: true
+          #FIX_JAVASCRIPT_STANDARD: true
           VALIDATE_NATURAL_LANGUAGE: false
           # To reuse the same Super-linter configuration that you use in the
           # lint job without duplicating it, see
