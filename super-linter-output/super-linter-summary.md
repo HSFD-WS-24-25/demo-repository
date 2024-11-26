@@ -8,7 +8,6 @@
 | GIT_MERGE_CONFLICT_MARKERS | Pass ✅           |
 | JAVASCRIPT_ES              | Pass ✅           |
 | JAVASCRIPT_PRETTIER        | Pass ✅           |
-| JAVASCRIPT_STANDARD        | Pass ✅           |
 | JSCPD                      | Pass ✅           |
 | JSON                       | Pass ✅           |
 | JSON_PRETTIER              | Pass ✅           |
