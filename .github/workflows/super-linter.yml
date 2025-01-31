@@ -28,6 +28,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           IGNORE_GITIGNORED_FILES: true
           FIX_JAVASCRIPT_PRETTIER: true  # Nur JavaScript mit Prettier fixen
+          VALIDATE_ALL_CODEBASE: false
       - name: Commit and push linting fixes
         # Run only on:
         # - Pull requests
