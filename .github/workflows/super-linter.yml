@@ -27,16 +27,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           IGNORE_GITIGNORED_FILES: true
-          FIX_SHELL_SHFMT: true
-          FIX_YAML_PRETTIER: true
-          FIX_JSON_PRETTIER: true
-          FIX_JAVASCRIPT_PRETTIER: true
-          #FIX_JAVASCRIPT_STANDARD: true
-          VALIDATE_JAVASCRIPT_STANDARD: false
-          VALIDATE_NATURAL_LANGUAGE: false
-          # To reuse the same Super-linter configuration that you use in the
-          # lint job without duplicating it, see
-          # https://github.com/super-linter/super-linter/blob/main/docs/run-linter-locally.md#share-environment-variables-between-environments
+          FIX_JAVASCRIPT_PRETTIER: true  # Nur JavaScript mit Prettier fixen
+          VALIDATE_ALL_CODEBASE: false
       - name: Commit and push linting fixes
         # Run only on:
         # - Pull requests
