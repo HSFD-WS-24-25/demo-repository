@@ -25,7 +25,7 @@ jobs:
       
       # Cache Docker image
       - name: Cache Docker image
-        uses: actions/cache@v3
+        uses: actions/cache@v2
         with:
           path: /tmp/.docker-cache
           key: super-linter-cache-${{ runner.os }}-${{ hashFiles('super-linter.yml') }}
