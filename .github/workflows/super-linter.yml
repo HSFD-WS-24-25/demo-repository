@@ -22,7 +22,16 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-                  
+
+      # Cache Docker image
+      - name: Cache Docker image
+        uses: actions/cache@v4.2.0
+        with:
+          path: /tmp/.docker-cache
+          key: super-linter-cache-${{ runner.os }}-${{ hashFiles('super-linter.yml', '**/*.js', '**/*.json') }}
+          restore-keys: |
+            super-linter-cache-${{ runner.os }}-
+
       - name: Super-Linter
         uses: super-linter/super-linter/slim@v7.2.1
         env:
